@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;300;600&display=swap');
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+:root {
+  --defaultColor: #14615b !important;
+  --titleColor: #333 !important;
+  --subtitleColor: #222 !important;
+  --whiteColor: #fff !important;
+  --purpleColor: #800080 !important;
+  --fontPoppins: 'Poppins', sans-serif !important;
+  --fontScript: 'Dancing Script', cursive !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 4rem !important;
+}
+
+body {
+  font-family: var(--fontPoppins);
+  background-color: #faf2ff;
+}
+
+.clear {
+  overflow: hidden !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.page__heading {
+  font-family: var(--fontScript);
+  font-weight: bold;
+  color: var(--purpleColor);
+}
+
+/* Hero section */
+
+.hero__section {
+  min-height: calc(100vh - 80px);
+  display: grid;
+  place-content: center;
+}
+
+.dev__img {
+  transition: 300ms ease;
+}
+
+.dev__img:hover {
+  transform: scale(1.2);
+  cursor: zoom-in;
+}
+
+.dev__title-sm {
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.dev__title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.dev__subtitle {
+  font-size: 1.8rem;
+  color: var(--purpleColor);
+  font-weight: bold;
+}
+
+/* skill section style */
+
+.skill__section {
+  background: linear-gradient(to top, #fcdec8, transparent);
+  padding-bottom: 180px !important;
+}
+
+.skill__title {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* counter section design */
+
+.counter__container {
+  background-color: #fff;
+  box-shadow: 10px 10px 20px -15px rgba(68, 68, 68, 0.297),
+    -10px -10px 20px -15px rgba(68, 68, 68, 0.104);
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 99rem;
+  padding: 30px 50px;
+}
+
+.counter__section {
+  transform: translateY(-87.5px);
+}
+
+.counter__icon {
+  font-size: 2.5rem;
+}
+
+.counter__title {
+  font-weight: bolder;
+  color: #555;
+}
+
+.counter__subtitle {
+  color: var(--purpleColor);
+  font-size: 1.2rem;
+  font-family: var(--fontScript);
+  font-size: 1.2rem;
+}
+
+/* about section */
+
+.about__section {
+  transform: translateY(-87.5px);
+}
+
+.dev__about {
+  float: left;
+  margin-right: 3rem;
+  shape-outside: circle(50%);
+}
+
+.about__section ul {
+  list-style-type: none;
+}
+
+.about__section ul li {
+  margin-top: 0.3rem;
+}
+
+.about__section ul li::before {
+  content: '💪';
+}
+
+/* testimonial section */
+
+.testimonial__section {
+  position: relative;
+  transform: translateY(-87.5px);
+  background: linear-gradient(to top, #fcdec8, transparent);
+}
+
+.testimonial__box {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-stage-outer {
+  border-radius: 0.5rem !important;
+}
+
+.owl-carousel {
+  max-width: 600px;
+  border-radius: 0.5rem !important;
+}
+
+.owl-carousel .item {
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.testimonial__stars .star {
+  color: #108a00;
+}
+
+.testimonial__desc {
+  font-size: 15px !important;
+}
+
+.testimonial__pro {
+  color: #888;
+}
+
+.owl-nav {
+  display: block !important;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  bottom: 0;
+  font-size: 3.5rem !important;
+  color: #999 !important;
+}
+
+.owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto !important;
+  right: -100px;
+  font-size: 3.5rem !important;
+  color: #999 !important;
+}
+
+.owl-next:hover,
+.owl-prev:hover {
+  color: var(--purpleColor) !important;
+}
+
+/* FAQ section */
+
+.faq__section {
+  position: relative;
+  transform: translateY(-87.5px);
+}
+
+.accordion-item {
+  margin: 10px 0;
+  background-color: transparent;
+  border: none !important;
+  box-shadow: 10px 10px 20px -15px rgb(68 68 68 / 30%),
+    -10px -10px 20px -15px rgb(68 68 68 / 10%);
+  background-color: #fff;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+}
+
+.accordion-body {
+  font-size: 1rem !important;
+  color: #888;
+}
+
+.accordion-button {
+  border-radius: 0 !important;
+  color: var(--purpleColor);
+}
+
+.accordion-button:focus {
+  border-color: red;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--purpleColor);
+  background-color: #fff !important;
+  border: none !important;
+}
+
+.accordion-button::after {
+  background-image: none !important;
+  content: '+' !important;
+  font-size: 1.5rem;
+  font-weight: bold !important;
+  color: #888;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none !important;
+  content: '-' !important;
+  transform: rotate(0deg) !important;
+  font-size: 1.5rem;
+  font-weight: bold !important;
+  color: var(--purpleColor);
+}
+
+/* contact section */
+
+.contact__section {
+  position: relative;
+  transform: translateY(-87.5px);
+}
+
+.contact__section .card {
+  transition: 300ms ease;
+  box-shadow: 0px 2px 10px rgba(128, 0, 128, 0.05);
+}
+
+.contact__section .card:hover {
+  box-shadow: 0px 10px 30px rgba(128, 0, 128, 0.1);
+}
+
+.contact__icon {
+  font-size: 2.5rem;
+  height: 90px;
+  width: 90px;
+  background-color: #f1f2ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  transition: 300ms ease;
+}
+
+.contact__icon:hover {
+  transform: scale(1.1);
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  transform: translateY(-30px);
+}
+
+/* Internet status toast */
+.internet {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  padding: 0.8rem 1.5rem 0.8rem 1rem;
+  border-radius: 99rem;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: hsla(60, 100%, 97%, 0.8);
+  box-shadow: 10px 10px 20px -15px rgb(68 68 68 / 30%),
+    -10px -10px 20px -15px rgb(68 68 68 / 10%);
+}
+
+.internet__box-offline {
+  background-color: rgb(255, 102, 117);
+  height: 50px;
+  width: 50px;
+  border-radius: 9rem;
+}
+
+.internet__box-online {
+  background-color: rgb(105, 250, 72);
+  height: 50px;
+  width: 50px;
+  border-radius: 9rem;
+}
+
+.offline {
+  color: var(--whiteColor);
+}
+
+.online {
+  color: #111;
+}
+
+.internet p {
+  font-size: 1rem;
+  color: #888;
+}

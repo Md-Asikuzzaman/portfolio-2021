@@ -1,0 +1,60 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: hsla(277, 100%, 97%, 0.8);
+  border-bottom: 1px solid #abaaaa3f;
+  z-index: 9999;
+}
+
+header nav {
+  min-height: 80px;
+}
+
+.logo {
+  color: purple;
+}
+
+.logo__dev {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+nav .nav__items {
+  font-family: var(--fontScript);
+  font-size: 1.3rem;
+}
+
+.nav__items a {
+  color: #888;
+  transition: all 100ms ease;
+  z-index: 999;
+}
+
+.nav__items a:hover {
+  color: #000;
+}
+
+.nav__items span.active {
+  position: relative;
+}
+
+.nav__items span.active a {
+  color: #000;
+  z-index: 999;
+}
+
+.nav__items span.active a::after {
+  content: '';
+  height: 8px;
+  width: 8px;
+  background-color: purple;
+  display: block;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 999px;
+}

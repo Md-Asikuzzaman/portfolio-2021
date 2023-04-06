@@ -1,0 +1,21 @@
+.progressbar {
+  width: 100%;
+  position: relative;
+  background-color: #ffcaff !important;
+  border-radius: 999px !important;
+}
+.proggress {
+  height: 20px !important;
+  width: 10px;
+  background-color: purple !important;
+  border-radius: 999px !important;
+
+}
+.percentCount {
+  float: right;
+  margin-top: -55px;
+  clear: both;
+  font-weight: 700;
+  font-size: 13px;
+  color: purple !important;
+}

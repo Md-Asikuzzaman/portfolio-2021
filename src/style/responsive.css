@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+  .dev__title {
+    font-size: 3.5rem;
+  }
+
+  .dev__subtitle {
+    font-size: 1.4rem;
+  }
+
+  .counter__container {
+    width: 80%;
+  }
+
+  .dev__about {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .about__section h5 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* nav bar settings */
+  .desktop__navbar {
+    display: none !important;
+  }
+
+  .menu__bar {
+    display: block !important;
+  }
+
+  .mobile__menu {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .counter__container {
+    border-radius: 2rem !important;
+  }
+}
